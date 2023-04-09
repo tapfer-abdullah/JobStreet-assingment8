@@ -1,0 +1,32 @@
+
+.banner-div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.banner-contents button{
+    width: 172px;
+height: 65px;
+
+background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+border-radius: 8px;
+}
+.text-blue{
+
+}
+.banner-img{
+
+}
+.banner-img img{
+    width: 100%;
+}
+.banner-title{
+    /* font-weight: 800;
+font-size: 80px; */
+
+/* or 125% */
+
+
+/* Dark 01 */
+
+color: #1A1919;
+}
