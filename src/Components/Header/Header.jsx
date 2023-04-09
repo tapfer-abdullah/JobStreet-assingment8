@@ -5,7 +5,7 @@ import Banner from '../Banner/Banner';
 
 const Header = () => {
     return (
-        <div className='header-container'>
+        <div className='header-container py-8 px-40'>
             <nav className='header-div'>
                 <h3>JobStreet</h3>
                 <div className='links'>
