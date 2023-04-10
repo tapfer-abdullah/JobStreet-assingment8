@@ -1,8 +1,7 @@
 import React from 'react';
 import "./JobCategory.css";
 import JCList from './JCList';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faCoins } from '@fortawesome/free-solid-svg-icons'
+
 
 const JobCategory = ({JobCList}) => {
     // console.log(JobCList)
@@ -11,7 +10,7 @@ const JobCategory = ({JobCList}) => {
             <h3 className='text-3xl font-semibold mb-4'>Job Category List</h3>
             <p className='jobCategory-p text-base mb-8'>Explore thousands of job opportunities with all the information you need. Its your future</p>
 
-            <div className='grid grid-cols-4 gap-6'>
+            <div className='grid grid-cols-1 md:grid-cols-4 gap-6'>
                 {
                     JobCList.map(list => <JCList key = {list.id} list = {list}></JCList>)
                 }
