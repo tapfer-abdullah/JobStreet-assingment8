@@ -13,6 +13,7 @@ import Header from './Components/Header/Header';
 import Statistics from './Components/Statistics/Statistics';
 import AppliedJobs from './Components/AppliedJobs/AppliedJobs';
 import Blog from './Components/Blog/Blog';
+import { json } from "react-router-dom";
 
 
 const router = createBrowserRouter([
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
     path: "/",
     element: <Main></Main>,
     errorElement: <ErrorPage></ErrorPage>,
+    loader: () => fetch("JobCategoryList.json"),
     children: [
       {
         path: "Statistics",

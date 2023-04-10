@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "logo": "https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img/https://collegestationcpas.com/wp-content/uploads/2021/12/s1.png",
+      "name": "Account & Finance",
+      "jobs_available": 300
+    },
+    {
+      "id": 2,
+      "logo": "https://img.freepik.com/premium-vector/light-bulb-lamp-idea-creative-innovation-energy-logo-design_221979-74.jpg",
+      "name": "Creative Design",
+      "jobs_available": 100
+    },
+    {
+      "id": 3,
+      "logo": "https://mededupro.com/wp-content/uploads/2021/12/icons-3.png",
+      "name": "Marketing & Sales",
+      "jobs_available": 150
+    },
+    {
+      "id": 4,
+      "logo": "https://pctsystems.com/wp-content/uploads/2022/05/technology-300x225-1.png",
+      "name": "Engineering Job",
+      "jobs_available": 244
+    }
+  ]
