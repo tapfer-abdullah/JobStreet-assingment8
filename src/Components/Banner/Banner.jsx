@@ -12,7 +12,7 @@ const Banner = () => {
                 <button className=''><Link className='text-white font-semibold'>Get Started</Link></button>
             </div>
             <div className='banner-img'>
-            <img src={IMG} alt="" />
+            <img src="/public/All Images/P3OLGJ1 copy 1.png" alt="" />
             </div>
         </div>
     );
