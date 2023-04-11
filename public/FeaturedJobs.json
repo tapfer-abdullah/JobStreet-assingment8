@@ -1,6 +1,6 @@
 [
   {
-        "id": 1,
+        "id": "id1",
         "company_logo": "./Logo/google-1-1 1-1.png",
         "job_title": "Technical Database Engineer",
         "company_name": "Google LLC",
@@ -18,7 +18,7 @@
         }
       },
       {
-        "id": 2,
+        "id": "id2",
         "company_logo": "./Logo/netflix-4 1.png",
         "job_title": "Senior Product Designer",
         "company_name": "Netflix",
@@ -36,7 +36,7 @@
         }
       },
       {
-          "id": 3,
+          "id": "id3",
           "company_logo": "./Logo/tesla-9 1.png",
           "job_title": "Software Engineer",
           "company_name": "Tesla",
@@ -54,7 +54,7 @@
           }
         },
       {
-        "id": 4,
+        "id": "id4",
         "company_logo": "./Logo/google-1-1 1-1.png",
         "job_title": "Data Analyst",
         "company_name": "Google LLC",
@@ -72,7 +72,7 @@
         }
       },
       {
-        "id": 5,
+        "id": "id5",
         "job_title": "Sales Manager",
         "company_logo": "./Logo/amazon.jpg",
         "company_name": "Amazon",
@@ -90,7 +90,7 @@
         }
       },
       {
-        "id": 6,
+        "id": "id6",
         "company_logo": "./Logo/Adobee.jpg",
         "job_title": "Content Writer",
         "company_name": "Adobe",

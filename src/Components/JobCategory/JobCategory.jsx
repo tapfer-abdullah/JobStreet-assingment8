@@ -12,7 +12,7 @@ const JobCategory = ({JobCList}) => {
 
             <div className='grid grid-cols-1 md:grid-cols-4 gap-6'>
                 {
-                    JobCList.map(list => <JCList key = {list.id} list = {list}></JCList>)
+                    JobCList ? JobCList.map(list => <JCList key = {list.id} list = {list}></JCList>) : ""
                 }
             </div>
         </div>

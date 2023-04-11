@@ -2,13 +2,19 @@ import React, { useEffect, useState } from "react";
 import { Link, useLoaderData, useParams } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot, faDollarSign, faPhone, faEnvelope, faCalendarMinus } from '@fortawesome/free-solid-svg-icons'
+import { addToDb } from "../../utilities/fakeDB";
 
 const ViewDetails = () => {
   const jobs = useLoaderData();
   const { jobID } = useParams();
 
   let jobDetails = jobs.find((job) => job.id == jobID);
-  console.log(jobDetails);
+  // console.log(jobDetails);
+
+  const addToLocalStorage = id =>{
+    // console.log(id)
+    addToDb(id);
+  }
 
 //   console.log(jobDetails);
   return (
@@ -60,7 +66,7 @@ const ViewDetails = () => {
                 </p>
 
             </div>
-            <button className="bg-slate-500 py-5 w-full rounded-lg text-white font-bold text-xl"><Link>Apply Now</Link></button>
+            <button onClick={() => addToLocalStorage(jobID)} className="bg-slate-500 py-5 w-full rounded-lg text-white font-bold text-xl">Apply Now</button>
         </div>
       </div>
     </>
