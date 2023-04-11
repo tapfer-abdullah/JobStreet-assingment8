@@ -6,7 +6,7 @@ import JCList from './JCList';
 const JobCategory = ({JobCList}) => {
     // console.log(JobCList)
     return (
-        <div className='py-8 px-40 my-28 text-center'>
+        <div className='md:py-8 md:px-40 p-4 my-28 text-center'>
             <h3 className='text-3xl font-semibold mb-4'>Job Category List</h3>
             <p className='jobCategory-p text-base mb-8'>Explore thousands of job opportunities with all the information you need. Its your future</p>
 

@@ -6,11 +6,11 @@ import { Link } from "react-router-dom";
 const ShowJobs = ({ job }) => {
   console.log(job);
   return (
-    <div className="border mt-6 px-8 flex items-center w-3/4 mx-auto rounded-md">
-      <div className="w-36 h-14 mr-4"> 
+    <div className="border mt-6 px-8 flex items-center w-2/3 mx-auto rounded-md">
+      <div className="w-36 h-14 mr-6"> 
         <img className="w-full h-full" src={job.company_logo} alt="" />
       </div>
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center w-full">
         <div>
           <h3 className="mt-8 mb-2 text-2xl">{job.job_title}</h3>
           <p className="text-xl mb-4 text-slate-600">{job.company_name}</p>
@@ -34,7 +34,8 @@ const ShowJobs = ({ job }) => {
           </div>
         </div>
         <div>
-          <button className='py-2 px-3 bg-slate-500 rounded-md'><Link className='text-white font-semibold bg-slate-500'>View Details</Link></button>
+          <button className='py-2 px-3 bg-slate-500 rounded-md mr-7'>
+            <Link to= {`/view-details/${job.id}`} className='text-white font-semibold bg-slate-500'>View Details</Link></button>
         </div>
       </div>
     </div>

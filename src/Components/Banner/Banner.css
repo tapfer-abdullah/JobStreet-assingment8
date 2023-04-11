@@ -30,3 +30,9 @@ font-size: 80px; */
 
 color: #1A1919;
 }
+
+@media screen and (max-width: 640px) {
+    .banner-div{
+        text-align: center;
+    }
+}

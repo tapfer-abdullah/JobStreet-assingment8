@@ -5,7 +5,7 @@ import Banner from '../Banner/Banner';
 
 const Header = () => {
     return (
-        <div className='header-container py-8 px-40 bg-gray-100'>
+        <div className='header-container p-4 md:py-8 md:px-40 bg-gray-100'>
             <nav className='header-div md:flex justify-between items-center'>
                 <h3>JobStreet</h3>
                 <div className='links'>

@@ -2,7 +2,7 @@ import React from 'react';
 import ShowJobs from './ShowJobs';
 
 const ShowAppliedJobs = ({savedCart}) => {
-    console.log(savedCart)
+    // console.log(savedCart)
     return (
         <div className='mb-20'>
             {

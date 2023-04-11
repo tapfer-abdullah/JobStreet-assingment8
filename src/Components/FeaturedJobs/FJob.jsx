@@ -7,7 +7,7 @@ const FJob = ({job}) => {
     // console.log(job.id)
     const {company_logo, id, company_name, job_title, remote_or_onsite, fulltime_or_parttime, salary, location} = job;
     return (
-        <div className='mt-8 mr-6 rounded-lg p-10 border-2 border-slate-200 text-left'>
+        <div className='mt-8 m-4 ms:mr-6 rounded-lg p-10 border-2 border-slate-200 text-left'>
             <div>
                 <img className='w-40 h-10' src={company_logo} alt="company logo" />
             </div>

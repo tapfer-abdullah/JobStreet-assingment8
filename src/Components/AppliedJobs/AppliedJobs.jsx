@@ -35,7 +35,7 @@ const AppliedJobs = () => {
     //   console.log(savedCart)
     return (
         <>
-            <div className="banner-div header-container py-8 px-40 bg-gray-100">
+            <div className="banner-div header-container md:py-8 md:px-40 bg-gray-100">
                 <div className="banner-contents mt-20 order-last md:order-first">
                   <h3 className="text-center mb-5 font-bold text-3xl">Applied Jobs</h3>
                 </div>
