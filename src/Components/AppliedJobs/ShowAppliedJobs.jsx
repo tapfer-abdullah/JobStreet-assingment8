@@ -1,11 +1,12 @@
 import React from 'react';
+import ShowJobs from './ShowJobs';
 
 const ShowAppliedJobs = ({savedCart}) => {
     console.log(savedCart)
     return (
-        <div>
+        <div className='mb-20'>
             {
-                savedCart? savedCart.map(job => console.log(job)) : "a"
+                savedCart.map(job => <ShowJobs job = {job}></ShowJobs>)
             }
         </div>
     );

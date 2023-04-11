@@ -41,10 +41,10 @@ const AppliedJobs = () => {
                 </div>
             </div>
             <div>
-                {/* <ShowAppliedJobs savedCart={savedCart}></ShowAppliedJobs> */}
-                {
+                <ShowAppliedJobs savedCart={savedCart}></ShowAppliedJobs>
+                {/* {
                     savedCart.map(a => console.log(a))
-                }
+                } */}
             </div>
         </>
     );
