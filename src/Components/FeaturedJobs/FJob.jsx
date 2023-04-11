@@ -4,8 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot, faDollarSign } from '@fortawesome/free-solid-svg-icons'
 
 const FJob = ({job}) => {
-    // console.log(job)
-    const {company_logo, company_name, job_title, remote_or_onsite, fulltime_or_parttime, salary, location} = job;
+    // console.log(job.id)
+    const {company_logo, id, company_name, job_title, remote_or_onsite, fulltime_or_parttime, salary, location} = job;
     return (
         <div className='mt-8 mr-6 rounded-lg p-10 border-2 border-slate-200 text-left'>
             <div>
@@ -21,7 +21,7 @@ const FJob = ({job}) => {
                 <p><FontAwesomeIcon icon={faLocationDot} /><span className='ml-2'>{location}</span></p>
                 <p className='ml-6'><FontAwesomeIcon icon={faDollarSign} /><span className='ml-2'>Salary: {salary}</span></p>
             </div>
-            <button className='py-2 px-3 bg-slate-500 rounded-md'><Link className='text-white font-semibold bg-slate-500'>View Details</Link></button>
+            <button className='py-2 px-3 bg-slate-500 rounded-md'><Link to= {`/view-details/${id}`} className='text-white font-semibold bg-slate-500'>View Details</Link></button>
             
         </div>
     );

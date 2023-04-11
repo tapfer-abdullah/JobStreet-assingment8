@@ -6,13 +6,13 @@ import JobCategory from '../JobCategory/JobCategory';
 import FeaturedJobs from '../FeaturedJobs/FeaturedJobs';
 
 const Main = () => {
-    const JobCList = useLoaderData();
+    // const JobCList = useLoaderData();
     // console.log(JobClist)
     return (
         <div className='main-div'>
             <Header></Header>
-            <JobCategory JobCList = {JobCList}></JobCategory>
-            <FeaturedJobs></FeaturedJobs>
+            {/* <JobCategory JobCList = {JobCList}></JobCategory>
+            <FeaturedJobs></FeaturedJobs> */}
             <Outlet></Outlet>
         </div>
     );

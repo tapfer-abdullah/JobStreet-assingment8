@@ -14,6 +14,8 @@ import Statistics from './Components/Statistics/Statistics';
 import AppliedJobs from './Components/AppliedJobs/AppliedJobs';
 import Blog from './Components/Blog/Blog';
 import { json } from "react-router-dom";
+import ViewDetails from './Components/ViewDetails/ViewDetails';
+import Outlets from './Components/Outlet/Outlets';
 
 
 const router = createBrowserRouter([
@@ -21,8 +23,12 @@ const router = createBrowserRouter([
     path: "/",
     element: <Main></Main>,
     errorElement: <ErrorPage></ErrorPage>,
-    loader: () => fetch("JobCategoryList.json"),
     children: [
+      {
+        path: "/",
+        element:<Outlets></Outlets>,
+        loader: () => fetch("JobCategoryList.json"),
+      },
       {
         path: "Statistics",
         element: <Statistics></Statistics>,
@@ -34,6 +40,11 @@ const router = createBrowserRouter([
       {
         path: "Blog",
         element: <Blog></Blog>,
+      },
+      {
+        path: "/view-details/:jobID"  ,
+        element: <ViewDetails></ViewDetails>,
+        loader: () => fetch('FeaturedJobs.json')
       },
     ]
   },
