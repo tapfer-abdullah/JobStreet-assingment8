@@ -3,7 +3,7 @@ import { getShoppingCart } from '../../utilities/fakeDB';
 import ShowAppliedJobs from './ShowAppliedJobs';
 
 const AppliedJobs = () => {
-    let storedCart = getShoppingCart();
+    // let storedCart = getShoppingCart();
     // console.log(storedCart);
 
     let [jobs, setJobs] = useState([]);
@@ -18,15 +18,16 @@ const AppliedJobs = () => {
 
     let savedCart = [];
     useEffect(() => {
+        let storedCart = getShoppingCart();
 
         for (let id in storedCart) {
-          const addedProduct = jobs.find((job) => job.id === id);
+          jobs.find((job) => job.id === id && savedCart.push(job));
 
         //   console.log(addedProduct)
-            if(addedProduct){
-                savedCart.push(addedProduct);
-                // console.log(addedProduct)
-            }
+            // if(addedProduct){
+            //     savedCart.push(addedProduct);
+            //     // console.log(addedProduct)
+            // }
           
         }
       }, [jobs]);
