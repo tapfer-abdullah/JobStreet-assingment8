@@ -16,58 +16,58 @@ import {
 const data = [
   {
     name: "Assignment 1",
-    Marks: 57,
-    Marks: 57,
-    Marks: 57,
+    // "Assignment": 1,
+    "Total-Marks": 60,
+    "Height-Marks": 60,
     Marks: 57,
   },
   {
     name: "Assignment 2",
-    Marks: 60,
-    Marks: 60,
-    Marks: 60,
+    // "Assignment": 2,
+    "Total-Marks": 60,
+    "Height-Marks": 60,
     Marks: 60,
   },
   {
     name: "Assignment 3",
-    Marks: 60,
-    Marks: 60,
-    Marks: 60,
+    // "Assignment": 3,
+    "Total-Marks": 60,
+    "Height-Marks": 60,
     Marks: 60,
   },
   {
     name: "Assignment 4",
-    Marks: 60,
-    Marks: 60,
-    Marks: 60,
+    // "Assignment": 4,
+    "Total-Marks": 60,
+    "Height-Marks": 60,
     Marks: 60,
   },
   {
     name: "Assignment 5",
-    Marks: 60,
-    Marks: 60,
-    Marks: 60,
+    // "Assignment": 5,
+    "Total-Marks": 60,
+    "Height-Marks": 60,
     Marks: 60,
   },
   {
     name: "Assignment 6",
-    Marks: 60,
-    Marks: 60,
-    Marks: 60,
+    // "Assignment": 6,
+    "Total-Marks": 60,
+    "Height-Marks": 60,
     Marks: 60,
   },
   {
     name: "Assignment 7",
-    Marks: 59,
-    Marks: 59,
-    Marks: 59,
+    // "Assignment": 7,
+    "Total-Marks": 60,
+    "Height-Marks": 60,
     Marks: 59,
   },
   {
     name: "Assignment 8",
-    Marks: 60,
-    Marks: 60,
-    Marks: 60,
+    // "Assignment": 8,
+    "Total-Marks": 60,
+    "Height-Marks": 60,
     Marks: 60,
   },
 ];
@@ -104,9 +104,9 @@ const Statistics = () => {
               fill="#8884d8"
               stroke="#8884d8"
             />
-            <Bar dataKey="Marks" barSize={20} fill="#413ea0" />
-            <Line type="monotone" dataKey="Marks" stroke="#ff7300" />
-            <Scatter dataKey="Marks" fill="red" />
+            <Bar dataKey="Height-Marks" barSize={20} fill="#413ea0" />
+            <Line type="monotone" dataKey="Assignment" stroke="#ff7300" />
+            <Scatter dataKey="Total-Marks" fill="red" />
           </ComposedChart>
         </div>
         <h3 className="text-center my-10 font-bold text-2xl text-slate-500">All Assignments marks</h3>
