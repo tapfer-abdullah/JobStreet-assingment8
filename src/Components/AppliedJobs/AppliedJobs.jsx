@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { getShoppingCart } from '../../utilities/fakeDB';
 import ShowAppliedJobs from './ShowAppliedJobs';
+import ShowJobs from './ShowJobs';
 
 const AppliedJobs = () => {
-    // let storedCart = getShoppingCart();
-    // console.log(storedCart);
 
     let [jobs, setJobs] = useState([]);
 
@@ -16,24 +15,26 @@ const AppliedJobs = () => {
 
     // console.log(jobs)
 
-    let savedCart = [];
+    let [savedCartItem, setSavedCartItem] = useState([]);
     useEffect(() => {
+        let savedCart = [];
         let storedCart = getShoppingCart();
 
         for (let id in storedCart) {
-          jobs.find((job) => job.id === id && savedCart.push(job));
+          let addedProduct = jobs.find((job) => job.id === id);
 
         //   console.log(addedProduct)
-            // if(addedProduct){
-            //     savedCart.push(addedProduct);
-            //     // console.log(addedProduct)
-            // }
+            if(addedProduct){
+                savedCart.push(addedProduct);
+                // console.log(addedProduct)
+            }
           
         }
+        setSavedCartItem(savedCart);
       }, [jobs]);
 
 
-    //   console.log(savedCart)
+    //   console.log(savedCartItem)
     return (
         <>
             <div className="banner-div header-container md:py-8 md:px-40 bg-gray-100">
@@ -41,11 +42,11 @@ const AppliedJobs = () => {
                   <h3 className="text-center mb-5 font-bold text-3xl">Applied Jobs</h3>
                 </div>
             </div>
-            <div>
-                <ShowAppliedJobs savedCart={savedCart}></ShowAppliedJobs>
-                {/* {
-                    savedCart.map(a => console.log(a))
-                } */}
+            <div className='mb-20'>
+                {/* <ShowAppliedJobs savedCart={savedCart}></ShowAppliedJobs> */}
+                {
+                    savedCartItem.map(job => <ShowJobs job = {job}></ShowJobs>)
+                }
             </div>
         </>
     );
