@@ -10,7 +10,7 @@ export default function ErrorPage() {
     
     <>
     <Header></Header>
-      <div id="error-page" className="text-red-600 text-center error-div bg-slate-500 p-10 w-2/4 mx-auto mt-40 rounded-xl">
+      <div id="error-page" className="text-red-600 text-center error-div bg-rose-300 p-10 w-2/4 mx-auto mt-40 rounded-xl">
       <h1 className="text-3xl font-extrabold my-3">404</h1>
       <p className="text-xl font-semibold">Sorry, an unexpected error has occurred.</p>
       <p className="text-xl font-semibold">
