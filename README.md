@@ -5,7 +5,7 @@ Live website link: "https://luxury-bonbon-9270e0.netlify.app/"
 
 
     Best features of the project:
-<---------------------------------->
+    
 1. There is a nav bar to navigate all important pages
 2. Job category and featured jobs are separated. It is easier for someone to find the information
 3. By clicking the "See all Jobs" button, you can see all the jobs
